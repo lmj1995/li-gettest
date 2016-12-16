@@ -1,0 +1,19 @@
+package com.lmj.yanlei;
+
+public class Lei {
+      
+	/**
+	 * 
+	 * 构造string 的对象
+	 * 
+	 */
+	
+	     public  void test1(){
+	    	 
+	    	String s1=new String();
+	    	System.out.print("s1:"+s1);
+	 
+	     }
+	
+	
+}

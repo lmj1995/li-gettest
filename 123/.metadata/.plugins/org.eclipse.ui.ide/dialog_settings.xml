@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java\A008，类"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A001"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\test"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A1"/>
+			<item value="C:\Users\LENOVO\Desktop"/>
+			<item value="C:\Users\LENOVO\Desktop\dom"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A02(data-type)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A01(java-base)"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

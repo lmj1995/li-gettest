@@ -1,0 +1,12 @@
+package com.lmj.lei;
+
+
+
+public class test1 {
+	 public static void main(String[] args) {
+        Student s=new Student("ÕÅÈı", "ÄĞ", 20, 30, 60, 90);
+		 
+		 
+		 
+	}
+}

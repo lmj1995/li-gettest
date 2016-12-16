@@ -1,0 +1,56 @@
+package com.lmj.lei;
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+/**
+ * 班级，
+ * 1.属性，班级的名字     班主任   学生
+ * 2.方法，总成绩   平均成绩   排名。intro
+ *
+ */
+public class MyClass {
+ //属性
+	  private String name;
+	  private String boss;
+	  private Student[] students;
+ //构造
+	  public MyClass(String name ,String boss, Student[] students){
+		  this.name=name;
+		  this.boss=boss;
+		  this.students=students;
+	  }
+//方法
+	 	public void intro(){
+	 		String info="";
+	 		info += "name:"+name+"\n"+"boss:"+boss+"\n";
+	 		System.out.println(info);
+	 		for (Student s : students) {
+				s.intro();
+			}
+// 输出
+			 System.out.println(info);
+	 	
+	  }	  
+
+	 	public void max(){
+	 		int max=0;
+	 		for(Student s : students){
+	 			if (max < s.total()) {
+					max =s.total();
+				}
+	 		}
+	 		System.out.println("max:" +max);	 	
+	 	}
+		public void min(){
+	 		int min=90;
+	 		for(Student s : students){
+	 			if (min > s.total()) {
+					min =s.total();  
+				}
+	 		}
+	 		System.out.println("min:" +min);	 	
+	 	}
+	 	
+	}
+	  
+

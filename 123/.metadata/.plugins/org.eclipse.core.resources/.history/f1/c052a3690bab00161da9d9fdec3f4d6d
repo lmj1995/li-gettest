@@ -1,0 +1,13 @@
+package com.lmj.lei;
+
+public class Student {
+      String name;
+      int age;
+      String general;
+      public void introduce(){
+    	  System.out.println("大家好,我叫"+name+"今年"+age+"了,我是个"+general+"孩");
+      }
+      void love(){
+    	  System.out.println("name:"+name+"\nage:"+age);
+      }
+}

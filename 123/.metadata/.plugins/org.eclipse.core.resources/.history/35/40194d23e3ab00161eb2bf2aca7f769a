@@ -1,0 +1,9 @@
+package com.lmj.mian;
+
+public class Test {
+    public static void main(String[] args) {
+		  Grandpa g1=new Grandpa("Àî", 70, "ÏÂÆå");
+		  g1. getup();
+	}
+    
+}

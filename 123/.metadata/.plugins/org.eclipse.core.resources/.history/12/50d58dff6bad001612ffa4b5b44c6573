@@ -1,0 +1,122 @@
+package com.wang.mywhile;
+
+/**
+ * while语句基本格式。
+ * 
+ */
+public class Demo1 {
+	
+	/**
+	 * 基本格式。
+	 */
+	public void myWhile1(){
+		
+		int a = 10;
+		while (a > 0) {
+			a--;
+			System.out.println("a=" + a);
+		}
+		
+//		while(true){
+//			System.out.println("hello");
+//		}
+		
+//		while (false) {
+//			System.out.println("world");
+//		}
+	}
+	
+	/**
+	 * while嵌套。
+	 */
+	public void myWhile2(){
+		/*
+		 * 大学4年，每年读100本书。
+		 */
+		int grade = 1;
+		int books = 0;
+		while (grade <= 4) {
+			
+			//读书
+			while (books < 100) {
+				books++;
+			}
+			//结果
+			System.out.println(grade + "年级：" + books + "本");
+			
+			//升级
+			grade++;
+		}
+		
+	}
+	public void daxue(){
+		int  grade=1;
+		int books=0;
+		while (grade<4){
+			while(books<100){
+				books++;
+			}
+			System.out.println(grade+"年级"+books+"本数");
+			grade++;
+		}
+	}
+	
+	/**
+	 * 中断整个循环。
+	 */
+	public void myWhile3(){
+		//a==15时，停止循环。
+		int a = 0;
+		while(true){
+			
+			a++;
+			System.out.println("a=" + a);
+			
+			//停止循环。
+			if (a == 15) {
+				System.out.println("停止循环！");
+				break;
+			}
+		}
+	}
+	
+	/**
+	 * 中断一次循环。
+	 */
+	public void myWhile4(){
+		
+		/*找出20以内，能被4整除的数。*/
+		int a = 0;
+		while(a <= 20){
+			a++;
+			
+			if (a % 4 != 0) {
+				continue;
+			}
+			
+			System.out.println("a=" + a);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

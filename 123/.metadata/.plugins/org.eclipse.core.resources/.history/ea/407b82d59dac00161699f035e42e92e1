@@ -1,0 +1,21 @@
+package com.lmj.mian;
+
+public class Test {
+    public static void main(String[] args) {
+//		  Grandpa g1=new Grandpa("李:", 70, "下棋");
+//		  g1. getup();
+//		  g1. worke();
+//		  g1. play();
+//		  g1. sleep();
+//		  g1. infor();
+    	Grandpa pa = new Grandpa("父一代", 67,"下棋");
+		Grandma ma = new Grandma("母一代", 70,"跳广场舞");	
+		Mum mo = new Mum("母二代", 38,"唱歌");
+		
+    	Family fam=new Family(ma, pa, mo);
+    	fam.daystart();
+    	
+    	
+	}
+    
+}

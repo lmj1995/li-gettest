@@ -1,0 +1,24 @@
+package com.lmg.demo;
+
+public class jiujiu {
+   
+	
+	public void  jiujiu(){
+		for(int  i=1; i<10;i++){
+			for(int j=1; j<=i;j++){
+				System.out.print(i+"*"+j+"="+(i*j)+"\t");
+			} 
+			System.out.println(" ");
+		}		
+	}
+	
+	
+	
+	public void jiujiu1(){
+		for(int  i=1;i<10;i++){
+			for(int j=1;j<=i;j++){
+				System.out.println(i+"*"+j+"="+(i*j)+"\t");
+			}
+		}System.out.println(" ");
+	}
+}

@@ -1,0 +1,17 @@
+package com.lmg.demo;
+
+public class Test {
+//  ≤‚ ‘
+	public static  void main(String[] args){
+		
+		  Dome d1=new Dome();
+		  
+//		  d1.test1(6,3);
+//		  d1.test2(2,0);
+//		  d1.test3(1000);
+		  d1.test4(1, 20, 189);
+		jiujiu d2= new jiujiu();
+		  d2.jiujiu();
+	}
+	
+}

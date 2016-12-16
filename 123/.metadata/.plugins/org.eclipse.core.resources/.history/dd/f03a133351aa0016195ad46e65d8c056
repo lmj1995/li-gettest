@@ -1,0 +1,24 @@
+package www.lmj.demo;
+/**
+ * 
+ * 数组中  第一个和最后一个交换，第二个和倒数第二个交换；
+ *
+ */
+
+
+
+public class Array1 {
+        
+	public void arr(){
+		int[] arr={12,98,76,54,30};
+	    int c=arr.length;
+		for(int i=0; i<c/2;i++){
+			int j=arr[i];
+			 arr [i]=arr[c-i-1];
+			 arr[c-i-1]=j;
+		}
+		for(int i=0; i<c;i++){
+			System.out.println(arr[i]);
+		}
+	}
+}
