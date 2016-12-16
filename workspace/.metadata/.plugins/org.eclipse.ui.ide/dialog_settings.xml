@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\LENOVO\Desktop\dom"/>
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java"/>
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java\A001-12-081"/>
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java\A001-12-08"/>
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java\A001-12-06"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A32(java-Thread1)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A39(java-Thread4)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A38(java-Thread3)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A37(java-Thread2)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A36(java-Thread1)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A35(TCP2)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A34(TCP1)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A33(UDP2)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A32(UDP1)"/>
+			<item value="C:\Users\LENOVO\Desktop\lianxi.java\A001-12-02"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A001-12-01"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A35(java-Thread3)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A34(java-Thread4)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A33(java-Thread2)"/>
+			<item value="C:\Users\LENOVO\Desktop\dom\A31(data-IO2)"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1477968315652" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+</section>

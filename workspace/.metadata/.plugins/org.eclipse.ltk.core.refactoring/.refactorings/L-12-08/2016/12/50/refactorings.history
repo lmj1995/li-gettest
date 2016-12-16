@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.lmj.test.UDPSender&apos; to &apos;UDPReciver&apos;&#x0D;&#x0A;- Original project: &apos;L-12-08&apos;&#x0D;&#x0A;- Original element: &apos;com.lmj.test.UDPSender&apos;&#x0D;&#x0A;- Renamed element: &apos;com.lmj.test.UDPReciver&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UDPSender&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.lmj.test{UDPSender.java[UDPSender" matchStrategy="1" name="UDPReciver" qualified="false" references="true" similarDeclarations="false" stamp="1481184015034" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,38 @@
+package com.lmj.test;
+
+import java.io.File;
+import java.io.StringBufferInputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+
+public class Dome2 {
+
+	//获取类的信息
+	public void test1(){
+		
+		Class  c = Student.class;
+		String name = c.getName();
+		int m = c.getModifiers();
+		
+		System.out.println("class name="+name);
+		System.out.println("modifier="+Modifier.toString(m));
+	}
+	//获取域的信息
+	public void test2(){
+		try {
+			Class c1 = Class.forName("com.lmj.test.Student");
+			
+			//获取属性
+			
+			Field f = c1.getField("name");
+			
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (NoSuchFieldException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		}
+	}
+}

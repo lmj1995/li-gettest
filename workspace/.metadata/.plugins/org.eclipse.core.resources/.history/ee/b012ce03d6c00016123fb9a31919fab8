@@ -1,0 +1,12 @@
+package com.lmj.test;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		Dome1 d1 =new Dome1();
+		d1.test1();
+		
+	}
+}

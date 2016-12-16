@@ -1,0 +1,22 @@
+package com.lmj.test;
+/**
+ * 继承Thread
+ *
+ */
+public class Dome2 extends Thread{
+
+	
+	     public void run(){
+	    	 super.run();
+	    	 //当前线程的名字
+	    	 int count = 100;
+	    	 int i = 0;
+	    	 while (i<count) {
+				String name = Thread.currentThread().getName();
+				System.out.println("i="+i);
+				i++;
+				
+			}
+	     }
+	
+}

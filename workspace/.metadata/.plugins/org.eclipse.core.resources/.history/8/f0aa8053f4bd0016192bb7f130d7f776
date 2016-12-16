@@ -1,0 +1,137 @@
+package com.lmj.test;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class TCPclient {
+
+	        public static final int PORT_SERVER= 9601; 
+	        
+	        private Socket client = null;
+	        private DatagramSocket socket = null;
+	        
+	        public void test1(){
+	        	try {
+	        		//地址
+					InetAddress address = InetAddress.getLocalHost();
+					//new 对象
+					client = new Socket(address, PORT_SERVER);
+					System.out.println("客户端创建");
+					//操作
+					InputStream is =client.getInputStream(); 
+					byte[] b = new byte[1024];
+					int len = is.read(b);
+					System.out.println("客户端接受数据");
+					String data = new String(b, 0, len);
+					System.out.println("客户数据:" + data);
+ 					//关闭
+					disConnect();
+					System.out.println("客户端关闭");
+				} catch (UnknownHostException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+	        	 
+	        	
+	        }
+
+   
+	        /**
+	         * 客户端发送数据
+	         * 
+	         */
+	        
+	             public void test2(){
+	            	 
+	            	 //发送地址
+	            	 String path = "G:/123.jpg";
+	            	 
+	            	 InetAddress address;
+					try {
+						 address = InetAddress.getLocalHost();
+						 client = new Socket(address, PORT_SERVER);
+						 System.out.println("客户端创建成功");
+						 
+						 OutputStream  os = client.getOutputStream();
+						 
+						 //先从文件拿数据
+						 File file = new File(path);
+						 FileOutputStream  fos = new FileOutputStream(file);
+						 
+						 
+						 long total = file.length();
+						 System.out.println("total:" + total + "Byte");
+						 
+						 
+						 
+						
+         				socket = new DatagramSocket(10001);
+					    System.out.println("输出成功，端口10001");
+								//准备数据
+						Scanner scanner = new Scanner(System.in);
+							 
+					while (true) {
+		     		String line =scanner.nextLine();
+					if (line.equals("hello")) {
+					break;
+					}
+									
+					byte[] buf =line.getBytes();
+//					InetAddress address1 = InetAddress.getLocalHost();
+				    InetAddress address2 = InetAddress.getByName("192.168.2.132");
+					System.out.println("ip:"+address2.getHostAddress());
+				    DatagramPacket packet = new DatagramPacket(buf, 0, buf.length, address2, 9235);
+									
+									// 发送数据
+					socket.send(packet);
+					System.out.println("发送数据：" + line);		
+								}
+					socket.close();
+				    scanner.close();
+					System.out.println("发送端关闭");
+					//关闭
+					 fos.close();
+					 disConnect();
+					 System.out.println("客户端关闭");		
+								
+								
+							} catch (SocketException e) {
+								e.printStackTrace();
+							} catch (UnknownHostException e) {
+								e.printStackTrace();
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						
+		           
+	            	 
+	             }
+	        
+	        
+	           
+			private void disConnect() {
+				if (client!=null&& !client.isClosed()) {
+					try {
+						client.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					
+				}
+				
+			}
+	       
+}

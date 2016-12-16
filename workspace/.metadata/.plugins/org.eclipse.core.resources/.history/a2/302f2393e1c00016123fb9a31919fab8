@@ -1,0 +1,43 @@
+package com.lmj.test2;
+
+import com.wang.thread.MyWork1;
+
+/**
+ * 线程优先级
+ * 
+ *
+ */
+public class Dome2 {
+
+	      
+	   public void test1 (){
+		   //任务
+		   MyWork1 work1 = new MyWork1();
+		   MyWork2 work2 = new MyWork2();
+		   
+		   //线程
+		   
+		   //名字
+		   
+		   //设置优先级
+		   
+		   //运行
+		   
+		   
+	   }
+	     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

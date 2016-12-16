@@ -1,0 +1,59 @@
+package com.lmj.test2;
+/**
+ * 线程调度
+ *
+ */
+public class Dome3 {
+/**
+ * 线程休眠.单线程
+ */
+	
+	    public void test(){
+	    	//任务
+	    	task1 t1 = new task1();
+	    	task2 t2 = new task2();
+	    	//调用
+	    	t1.run();
+	    	t2.run();
+	    }
+	  /**
+	   * 多线程休眠  
+	   */
+	    public void test1(){
+	    	//任务
+	    	task1 t1 = new task1();
+	    	task2 t2 = new task2();
+	    	//线程
+	    	Thread th1 = new Thread(t1);
+	    	Thread th2 = new Thread(t2);
+	    	//运行
+	    	th1.start();
+	    	th2.start();
+	    }
+	    
+	    
+}
+class task1 implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}
+class task2 implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}
+class task3 implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}

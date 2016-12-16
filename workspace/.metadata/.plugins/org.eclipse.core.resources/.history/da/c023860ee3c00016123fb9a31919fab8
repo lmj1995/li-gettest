@@ -1,0 +1,40 @@
+package com.lmj.test2;
+
+
+/**
+ * 线程优先级
+ * 
+ *
+ */
+public class Dome2 {
+
+	      
+	   public void test1 (){
+		   //任务
+		   
+		   //线程
+		   
+		   //名字
+		   
+		   //设置优先级
+		   
+		   //运行
+		   
+		   
+	   }
+	     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

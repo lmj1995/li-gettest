@@ -1,0 +1,25 @@
+package com.lmj.test2;
+
+import org.ietf.jgss.Oid;
+
+
+
+public class Sell {
+
+	private int ticket= 100;
+	
+	public void  test1(){
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+

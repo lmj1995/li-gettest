@@ -1,0 +1,13 @@
+package com.lmj.test;
+/**
+ * 
+ * @author LENOVO
+ *
+ */
+public class Student {
+
+	private String name = "";
+	private int age = 0;
+	
+	
+}

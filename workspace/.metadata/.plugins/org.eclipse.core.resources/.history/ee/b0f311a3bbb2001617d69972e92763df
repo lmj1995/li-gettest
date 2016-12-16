@@ -1,0 +1,24 @@
+package www.lmj.dome3;
+
+import www.lmj.dome3.Baby.Lei;
+
+public class Test {
+
+	
+
+	public static void main(String[] args) {
+//       //外部类和内部类都是动态类		
+		Baby b=new Baby("ninni:");
+		b.eat();
+//		Lei l=b.new Lei(9);
+//		l.play();
+		Lei l1=b.new Lei();
+		Test l = null;
+		l.Test();
+}
+
+	private void Test() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,17 @@
+package com.lmj.test;
+
+import java.io.StringBufferInputStream;
+
+public class Dome2 {
+
+	//获取类的信息
+	public void test1(){
+		
+		Class  c = Student.class;
+		String name = c.getName();
+		int m = c.getModifiers();
+		
+		System.out.println("Dome2.test1()");
+		StringBufferInputStream
+	}
+}
