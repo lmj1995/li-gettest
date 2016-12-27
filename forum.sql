@@ -30,9 +30,9 @@ create table f_article(
   LastReplayUID  int
 );
 insert into user(AID,theme,Post_time,Browsing_times,Countent,UID,LastReplayDate,LastReplayUID)
-values(1,'运动','now','1','运动介绍','1','now','1');
+values(1,'运动','now','1','运动介绍','1',now(),'1');
 insert into user(AID,theme,Post_time,Browsing_times,Countent,UID,LastReplayDate,LastReplayUID)
-values(1,'美食','now','1','美食介绍','1','now','1');
+values(1,'美食','now','1','美食介绍','1',now(),'1');
 
 create table f_reply(
   time datetime primary key not null,
@@ -53,9 +53,9 @@ create table f_moderator(
   Operdate datetime
 );
 insert into user(FID,UID,OperUID,Operdate)
-values('1','1','11','now');
+values('1','1','11',now());
 insert into user(FID,UID,OperUID,Operdate)
-values('2','2','22','now');
+values('2','2','22',now());
 
 create table f_userdesc(
   UID int  not null,
