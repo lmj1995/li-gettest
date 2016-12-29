@@ -32,7 +32,7 @@ create table f_article(
 insert into user(AID,theme,Post_time,Browsing_times,Countent,UID,LastReplayDate,LastReplayUID)
 values(1,'运动',now(),'1','运动介绍','1',now(),'1');
 insert into user(AID,theme,Post_time,Browsing_times,Countent,UID,LastReplayDate,LastReplayUID)
-values(1,'美食',now(),'1','美食介绍','1',now(),'1');
+values(2,'美食',now(),'2','美食介绍','2',now(),'2');
 
 create table f_reply(
   time datetime primary key not null,
@@ -59,7 +59,6 @@ values('2','2','22',now());
 
 create table f_userdesc(
   UID int  not null,
-
   desci varchar(68),
   name varchar(68),
   sex varchar(68),
@@ -82,8 +81,7 @@ values('2','lmj','123456l');
 
 create table f_entity7(
   FID int not null,
-  UID int  not null,
-
+  UID int  not null
 );
 insert into user(FID,UID)
 values('1','1');
@@ -103,7 +101,6 @@ values('2','mark');
 create table f_entity9(
   FID int  not null,
   UID int  not null,
-
 );
 insert into user(FID,UID)
 values('1','1');
