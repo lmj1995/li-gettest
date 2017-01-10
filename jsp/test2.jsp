@@ -17,7 +17,7 @@
            String driverName ="com.mysql.jdbc.Driver";
            String URL = "jdbc:mysql://localhost:3306/boss";
            String User = "root";
-           String PASSWORD = "lmj1995.";
+           String PASSWORD ="123445";
 
           String msg="";
 
